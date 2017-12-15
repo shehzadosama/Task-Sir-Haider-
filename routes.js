@@ -5,6 +5,8 @@ import Test from './components/test';
 import TimeUp from './components/timeup';
 import Correct from './components/correct';
 import Wrong from './components/wrong';
+import Scoreboard from './components/scoreboard';
+
 
 
 
@@ -26,12 +28,12 @@ class Route extends Component {
         return (
             <Router>
                 <Scene key="root">
-                    <Scene key="Test"
+                    {/* <Scene key="Test"
                         component={Test}
                         title="Test"
                         hideNavBar={true}
                         initial
-                    />
+                    /> */}
                     {/* <Scene key="TimeUp"
                         component={TimeUp}
                         title="TimeUp"
@@ -50,6 +52,12 @@ class Route extends Component {
                         hideNavBar={true}
                         initial
                     /> */}
+                    <Scene key="Scoreboard"
+                        component={Scoreboard}
+                        title="Scoreboard"
+                        hideNavBar={true}
+                        initial
+                    />
 
 
 

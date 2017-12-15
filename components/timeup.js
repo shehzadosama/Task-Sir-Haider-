@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, Image, StyleSheet, Dimensions, } from 'react-native';
 import { Container, Content, Header, Body, ListItem, List, Button, Right, Left, Title, Drawer, Fab, Footer, FooterTab, Spinner, Text } from 'native-base';
-// import * as nb from 'native-base';
+
 
 
 export default class TimeUp extends Component {
@@ -48,7 +48,7 @@ export default class TimeUp extends Component {
 
                         </ListItem>
                         <ListItem style={{ backgroundColor: '#F72F2F', borderColor: '#F72F2F' }}>
-                            <Text style={{ marginLeft: 110, color: 'yellow', fontSize: 16,marginTop:25 }}>View scorecard</Text>
+                            <Text style={{ marginLeft: 110, color: 'yellow', fontSize: 16, marginTop: 25 }}>View scorecard</Text>
 
                         </ListItem>
 

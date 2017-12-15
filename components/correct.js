@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, Image, StyleSheet, Dimensions, } from 'react-native';
 import { Container, Content, Header, Body, ListItem, List, Button, Right, Left, Title, Drawer, Fab, Footer, FooterTab, Spinner, Text } from 'native-base';
-// import * as nb from 'native-base';
+
 
 
 export default class Correct extends Component {
