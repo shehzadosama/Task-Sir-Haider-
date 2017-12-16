@@ -22,8 +22,8 @@ export default class Scoreboard extends Component {
                         <ListItem style={{ backgroundColor: 'none', borderBottomWidth: 0 }}>
                             <Text style={{ marginLeft: 105, color: '#E8EE29', fontWeight: 'bold', fontSize: 25, textShadowOffset: { width: 0, height: 3 } }}>Scoreboard</Text>
                         </ListItem>
-                        <ListItem style={{ backgroundColor: 'none', borderBottomWidth: 0, marginLeft: 150, borderRadius: 40, borderColor: 'white' }} >
-                            <Image source={require('./images/feature_btn_bg.png')} style={{ width: 70, height: 10 }} />
+                        <ListItem style={{ backgroundColor: 'none', borderBottomWidth: 0, marginLeft: 150, borderColor: 'white' }} >
+                            <Image source={require('./images/score_card_yellow.png')} style={{width:60,height:8 ,borderRadius: 5, }} />
 
                         </ListItem>
 
