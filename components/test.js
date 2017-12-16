@@ -74,7 +74,8 @@ export default class Test extends Component {
             currentPercentageVal: this.state.percentage
         });
         if (opt === this.state.correctAns) {
-            this.setState({ correct: true })
+            setTimeout(()=>{ this.setState({ correct: true }) }, 2000);
+            // this.setState({ correct: true })
             if (opt === "A") {
                 this.setState({
                     correctA: true,
@@ -114,7 +115,7 @@ export default class Test extends Component {
 
         }
         else {
-            this.setState({ wrong: true })
+            setTimeout(()=>{ this.setState({ wrong: true }) }, 2000);
             if (this.state.correctAns === "A") {
                 this.setState({
                     correctA: true,
@@ -153,12 +154,20 @@ export default class Test extends Component {
 
     }
 
+    showCorrectScreen() {
+        alert()
+        //    setTimeout(() => {
+        //     alert()
+        //    }, 500) 
+
+    }
+
 
     render() {
 
 
-        console.log(this.state.percentage)
-        // console.log(this.state.height)
+        console.log(this.state.currentPercentageVal)
+        console.log(this.state.currentCounterVal)
 
         return (
 
@@ -171,10 +180,10 @@ export default class Test extends Component {
                     <Left >
                         {!this.state.selected ?
                             <ListItem style={{ width: this.state.percentage, height: 1, backgroundColor: '#FD01AC', borderRadius: 20, borderColor: 'white' }} >
-                                <Text style={{ color: 'white', marginLeft: 'auto', }}>{this.state.counter}   </Text>
+                                <Text style={{ color: 'white', marginLeft: 'auto', marginRight: -25 }}>{this.state.counter}   </Text>
                             </ListItem> :
                             <ListItem style={{ width: this.state.currentPercentageVal, height: 1, backgroundColor: '#CEE1F8', borderRadius: 20, borderColor: 'white' }} >
-                                <Text style={{ color: 'white', marginLeft: 210 }}>
+                                <Text style={{ color: 'white', marginLeft: 'auto', marginRight: -15 }}>
                                     {this.state.currentCounterVal}
                                 </Text>
                             </ListItem>

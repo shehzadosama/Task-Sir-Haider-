@@ -24,8 +24,8 @@ export default class Wrong extends Component {
 
 
         return (
-            <Container style={{ backgroundColor: '#F72F2F', opacity: 0.6, position: 'absolute', zIndex: 10, width: '100%', height: Dimensions.get('window').height }} >
-                <Content >
+            <Container style={{ backgroundColor: '#F72F2F', opacity: 0.5, position: 'absolute', zIndex: 10, width: Dimensions.get('window').width, height: Dimensions.get('window').height }} >
+                <Content style={{  backgroundColor: '#F72F2F', width: Dimensions.get('window').width, height: Dimensions.get('window').height}}>
                     <List style={{ backgroundColor: '#F72F2F' }}>
                         <ListItem style={{ backgroundColor: '#F72F2F', borderColor: '#F72F2F' }}>
                             <Image source={require('./images/wrong_icon.png')} style={{ width: 100, height: 100, marginLeft: 130, marginTop: 50 }} />

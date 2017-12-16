@@ -15,17 +15,16 @@ export default class Correct extends Component {
 
 
 
-
-
+    
     render() {
 
-
+        
 
 
 
         return (
-            <Container style={{ backgroundColor: '#19D617', opacity: 0.6, position: 'absolute', zIndex: 10, width: '100%', height: Dimensions.get('window').height }} >
-                <Content >
+            <Container style={{ backgroundColor: '#19D617', opacity: 0.5, position: 'absolute', zIndex: 10, width: Dimensions.get('window').width, height: Dimensions.get('window').height }} >
+                <Content style={{ backgroundColor: '#19D617', width: Dimensions.get('window').width, height: Dimensions.get('window').height }} >
                     <List style={{ backgroundColor: '#19D617' }}>
                         <ListItem style={{ backgroundColor: '#19D617', borderColor: '#19D617' }}>
                             <Image source={require('./images/correct_icon.png')} style={{ width: 100, height: 100, marginLeft: 130, marginTop: 50 }} />
